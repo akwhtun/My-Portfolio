@@ -11,7 +11,10 @@
 
      <!------custom CSS------>
      <style>
-        .home{
+         body{
+             scroll-behavior: smooth;
+         }
+        .home, .services{
           background:#343434;
         }
     </style>
@@ -34,12 +37,12 @@
                         </li>
                         <li class="nav-item">
                           <a href="#about" class="nav-link text-danger">About</a>
-                      </li>
-                        <li class="nav-item">
-                           <a href="#skills" class="nav-link text-danger">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a href="#services" class="nav-link text-danger">Services</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#skills" class="nav-link text-danger">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a href="#projects" class="nav-link text-danger">Projects</a>
@@ -58,78 +61,201 @@
         </nav>
         <!--------navbar end-------->
 
-         <!------home section start------>
-    <section class="home" id="home">
-        <div class="container-lg">
-            <div class="row align-items-center" style="height:93vh;">
-              <div class="col-12 col-md-6 order-md-0 order-2">
-                <div class="my-profile ms-2 text-md-start text-center">
-                  <p class="text-danger mb-1">Welcome!</p>
-                  <h1 class="h2 text-muted">I am <span class="text-danger fw-bold">Aung Kyaw Wai Htun</span></h1>
-                  <p class="text-muted mt-2">I am <span class="text-danger">Fullstack Web Developer</span> with <br> long time experience in this field .</p>
-                  <a href="#" class="btn btn-dark text-danger mt-1"><i class="fas fa-download"></i> Download CV</a>
+        <!------home section start------>
+        <section class="home" id="home">
+            <div class="container-lg">
+                <div class="row align-items-center" style="height:93vh;">
+                <div class="col-12 col-md-6 order-md-0 order-2">
+                    <div class="my-profile ms-2 text-md-start text-center">
+                    <p class="text-danger mb-1">Welcome!</p>
+                    <h1 class="h2 text-muted">I am <span class="text-danger fw-bold">Aung Kyaw Wai Htun</span></h1>
+                    <p class="text-muted mt-2">I am <span class="text-danger">Fullstack Web Developer</span> with <br> long time experience in this field .</p>
+                    <a href="#" class="btn btn-dark text-danger mt-1"><i class="fas fa-download"></i> Download CV</a>
+                    </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 order-1">
-                <div class="mx-auto" style="width:360px;height: 360px;">
-                    <img src="./images/img1.jpg" class=" w-100 h-100 rounded-circle" alt="profile picture">
+                <div class="col-12 col-md-6 order-1">
+                    <div class="mx-auto" style="width:360px;height: 360px;">
+                        <img src="./images/img1.jpg" class=" w-100 h-100 rounded-circle" alt="profile picture">
+                    </div>
                 </div>
-              </div>
+                </div>
+            </div>
+        </section>
+        <!------home section end------->
+
+        <!-- about section start -->
+        <div class="about py-4 bg-black" id="about">
+            <div class="container-lg">
+            <div class="text-center">
+                <p class="mb-1 text-white">Discover</p>
+                <h3 class="text-danger">About Me</h3>
+            </div>
+            <div class="row align-items-center" style="min-height:82vh;">
+                <div class="col-md-6 text-center">
+                    <img src="./images/img2.jpg" style="width:380px;height:450px;">
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 d-flex flex-column justify-content-around">
+                        <div class="intro text-muted">
+                            <h3>Hello,</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laborum eos, cupiditate magnam voluptatem aspernatur qui incidunt ullam id minus minima, consectetur cum impedit numquam sit tenetur, deserunt velit eum.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, exercitationem, cupiditate consectetur quisquam provident ad sunt eligendi fugit iste esse error impedit aliquam ducimus ullam perferendis deserunt quasi similique ipsum.
+                        </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="text-danger"><i class="fas fa-user-alt"></i> Name</h5>
+                                <p class="text-white">Aung Kyaw Wai Htun</p>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="text-danger"><i class="fas fa-phone-alt"></i> Phone</h5>
+                                <p class="text-white">09881971360</p>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="text-danger"><i class="fas fa-envelope"></i> Email</h5>
+                                <p class="text-white">akwhtun@gmail.com</p>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="text-danger"><i class="fas fa-map-marked-alt"></i> Address</h5>
+                                <p class="text-white">Mandalay,Myingyan</p>
+                            </div>
+                            <div class="col-xl-8 col-lg-9 d-flex align-items-center justify-content-between" style="height:70px;">
+                                <a href="#" class="btn btn-dark text-danger text-decoration-none" ><i class="fas fa-download"></i> Download CV</a>
+                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-viber"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-    </section>
-    <!------home section end------->
+        <!-- about section end -->
 
-     <!-- about section start -->
-     <div class="about bg-black py-4" id="about">
-        <div class="container-lg">
-          <div class="text-center">
-             <p class="mb-1 text-white">Discover</p>
-             <h3 class="text-danger">About Me</h3>
-          </div>
-          <div class="row align-items-center" style="min-height:82vh;">
-              <div class="col-md-6 text-center">
-                  <img src="./images/img2.jpg" style="width:380px;height:450px;">
-              </div>
-              <div class="col-md-6">
-                  <div class="p-4 d-flex flex-column justify-content-around">
-                     <div class="intro text-muted">
-                        <h3>Hello,</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laborum eos, cupiditate magnam voluptatem aspernatur qui incidunt ullam id minus minima, consectetur cum impedit numquam sit tenetur, deserunt velit eum.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, exercitationem, cupiditate consectetur quisquam provident ad sunt eligendi fugit iste esse error impedit aliquam ducimus ullam perferendis deserunt quasi similique ipsum.
-                      </p>
-                     </div>
-                     <div class="row">
-                          <div class="col-6">
-                            <h5 class="text-danger"><i class="fas fa-user-alt"></i> Name</h5>
-                            <p class="text-white">Aung Kyaw Wai Htun</p>
-                          </div>
-                          <div class="col-6">
-                            <h5 class="text-danger"><i class="fas fa-phone-alt"></i> Phone</h5>
-                            <p class="text-white">09881971360</p>
-                          </div>
-                          <div class="col-6">
-                            <h5 class="text-danger"><i class="fas fa-envelope"></i> Email</h5>
-                            <p class="text-white">akwhtun@gmail.com</p>
-                          </div>
-                          <div class="col-6">
-                            <h5 class="text-danger"><i class="fas fa-map-marked-alt"></i> Address</h5>
-                            <p class="text-white">Mandalay,Myingyan</p>
-                          </div>
-                          <div class="col-xl-8 col-lg-9 d-flex align-items-center justify-content-between" style="height:70px;">
-                            <a href="#" class="btn btn-dark text-danger text-decoration-none" ><i class="fas fa-download"></i> Download CV</a>
-                            <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-viber"></i></a>
-                          </div>
-                     </div>
-                  </div>
-              </div>
-          </div>
+        <!-- Services section start -->
+        <div class="services py-4" id="services">
+            <div class="container-lg">
+                <div class="text-center my-3">
+                <p class="mb-1 text-white">What I Do?</p>
+                <h3 class="text-danger">My Services</h3>
+                </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
+                    <i class="fas fa-laptop-code fs-2 text-danger"></i>
+                    <p class="fs-4 my-3">Web Developement</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
+                    <i class="fas fa-laptop fs-2 text-danger"></i>
+                    <p class="fs-4 my-3">Web Design</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
+                    <i class="fas fa-desktop fs-2 text-danger"></i>
+                    <p class="fs-4 my-3">Fully Responsive</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
+                    <i class="far fa-lightbulb fs-2 text-danger"></i>
+                    <p class="fs-4 my-3">Creative Idea</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
+                    <i class="far fa-images fs-2 text-danger"></i>
+                    <p class="fs-4 my-3">Photoshop</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-4"style="height:150px;">
+                    <div class=" h-100 shadow-sm d-flex flex-column justify-content-center align-items-center mx-1">
+                    <h1 class="text-danger mb-1 fs-1 fw-bold">3</h1>
+                    <span class="text-white">Year Experience</span>
+                    </div>
+                </div>
+                <div class="col-md-8 px-5">
+                    <div class="row g-2">
+                        <div class="col-md-6 col-sm-6" style="height:68px;">
+                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
+                            <h3 class="mb-0 text-danger">10+</h3>
+                            <p>Clients</p>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="height:68px;">
+                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
+                            <h3 class="mb-0 text-danger">20+</h3>
+                            <p>Completed Projects</p>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="height:68px;">
+                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
+                            <h3 class="mb-0 text-danger">10+</h3>
+                            <p>Positive Review</p>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="height:68px;">
+                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
+                            <h3 class="mb-0 text-danger">2</h3>
+                            <p>Achievements</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
-    </div>
-  <!-- about section end -->
+        <!-- Services section end -->
+
+        <!-- skills section start -->
+        <div class="skills py-4 bg-black" id="skills">
+            <div class="container-lg">
+                <div class="text-center mt-2">
+                <p class="mb-1 text-white">What My Design Skills Included? </p>
+                <h3 class="text-danger">My Skills</h3>
+                </div>
+                <div class="row my-4 px-5">
+                    <div class="col-sm-6 mb-4">
+                    <h4 class="text-danger">HTML & CSS</h4>
+                    <div class="progress" style="height:8px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:90%;"></div>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                    <h4 class="text-danger">JavaScript</h4>
+                    <div class="progress" style="height:8px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:85%;"></div>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                        <h4 class="text-danger">BootStrap</h4>
+                        <div class="progress" style="height:8px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:70%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                    <h4 class="text-danger">PhotoShop</h4>
+                    <div class="progress" style="height:8px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:50%;"></div>
+                    </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <!-- skills section end -->  
+
+        
 
     <!-- JS Link -->
     <script src="./npm/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
