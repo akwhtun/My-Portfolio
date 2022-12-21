@@ -4,415 +4,454 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Fontawesome Link -->
     <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!------custom CSS------>
-     <style>
-         body{
-             scroll-behavior: smooth;
-         }
-        .home, .services, .projects, .contact{
-          background:#343434;
-        }
-    </style>
-    <title>Document</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caramel&family=Josefin+Sans:ital,wght@1,100;1,300;1,500&family=Open+Sans:ital,wght@0,500;1,700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+
+    <title>My Portfolio</title>
+
 </head>
 <body>
-    
-        <!--------navbar start------->
-        <nav class="navbar navbar-expand-md bg-dark shadow-sm px-md-5  sticky-top">
-            <div class="container-fluid px-md-5">
-                <a href="#" class="navbar-brand text-danger">My Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                    <span class="fas fa-bars fs-5 text-danger"></span>
-                </button>
-    
-               <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                    <ul class="navbar-nav  align-items-md-center">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link text-danger active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#about" class="nav-link text-danger">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link text-danger">Services</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#skill" class="nav-link text-danger">Skill</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#projects" class="nav-link text-danger">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#freelancer" class="nav-link text-danger">Freelancer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link text-danger">
-                            <button class="btn btn-outline-danger px-3 text-white-50"> Contact </button>
-                            </a>
-                        </li>
-                    </ul>
-               </div>
-            </div>
-        </nav>
-        <!--------navbar end-------->
 
-        <!------home section start------>
-        <section class="home" id="home">
-            <div class="container-lg">
-                <div class="row align-items-center" style="height:93vh;">
-                <div class="col-12 col-md-6 order-md-0 order-2">
-                    <div class="my-profile ms-2 text-md-start text-center">
-                    <p class="text-danger mb-1">Welcome!</p>
-                    <h1 class="h2 text-muted">I am <span class="text-danger fw-bold">Aung Kyaw Wai Htun</span>.</h1>
-                    <p class="text-muted mt-2">I am <span class="text-danger">Fullstack Web Developer</span> with <br> long time experience in this field .</p>
-                    <a href="#" class="btn btn-dark text-danger mt-1"><i class="fas fa-download"></i> Download CV</a>
+    <!--------navbar start------->
+    <nav class="navbar navbar-expand-md bg-dark shadow-sm px-md-5  sticky-top normal m-0 p-0">
+        <div class="container-fluid px-md-5">
+            <a href="#" class="navbar-brand text-danger pfo">AKWH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="fas fa-bars fs-5 text-danger"></span>
+            </button>
+
+           <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav  align-items-md-center">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link text-danger active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link text-danger">About</a>
+                  </li>
+                    <li class="nav-item">
+                        <a href="#skill" class="nav-link text-danger">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#freelancer" class="nav-link text-danger">Freelancer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link text-danger">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-danger">
+                        <button class="btn btn-outline-danger px-3 text-white-50"> Contact</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="form-check form-switch mx-sm-5 mx-3">
+                            <input class="form-check-input fs-3" type="checkbox" id="checkbox">
+                            <label class="form-check-label" for="checkbox"></label>
+                          </div>
+                    </li>
+                </ul>
+           </div>
+        </div>
+    </nav>
+    <!--------navbar end-------->
+
+    <!------home section start------>
+     <section class="normal" id="home">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center" style="height:100vh;">
+                <div class="col-md-9 col-sm-10 col-12 p-1">
+                    <div class="my-profile text-start ps-3 mt-sm-0 mt-3">
+                        <p class="mb-3 fs-3 text-white-50">Welcome!</p>
+                        <h1 class="text-muted fs-1 my-3">I am <span class="text-danger fw-bold special">Aung Kyaw Wai Htun</span>.
+                        </h1>
+                        <p class="text-muted fs-5">I am <span class="text-danger fw-bold special">Fullstack Web Developer</span> with  long time experience in this field . <br> I am passionate about improving the lives of others through skill an constantly looking to learn new things everyeday.</p>
+                        <a href="#" class="btn btn-dark mt-1 special btn-red-text">See My Work</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 order-1">
-                    <div class="mx-auto" style="width:360px;height: 360px;">
-                        <img src="./images/img1.jpg" class=" w-100 h-100 rounded-circle" alt="profile picture">
+                <div class="col-md-3 col-sm-2 col-9">
+                        <div class="d-flex flex-sm-column flex-row align-items-end justify-content-sm-center justify-content-around">
+                            <a href="https://facebook.com/aungkyaw.waihtun" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/akwhtun" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-github"></i></a>
+                            <a href="#" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-instagram"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!------home section end------->
+
+    <!-- about section start -->
+    <div class="bg-black min-vh-100" id="about">
+        <div class="container-lg py-5">
+            <div class="text-center mt-3">
+                <h3 class="text-danger special">About Me</h3>
+                <p class="text-white-50 my-4"><span class="text-danger">Hello, I'm Aung Kyaw Wai Htun.</span>I'm freelancer Full Stack Developer.I'm very passionate and dedicated to my work.</p>
+            </div>
+            <div class="row p-3">
+            <div class="col-lg-6 col-12 mt-5 text-center">
+                <p class="fs-3 text-danger special">Personal Details</p>
+                <div class="d-flex flex-column">
+                    <div class="d-flex">
+                        <h5 class="text-danger offset-xl-3 col-xl-3 offset-2 col-4 text-start"><i class="fas fa-user-alt"></i> Name</h5>
+                        <p class="text-white offset-1 col-5 text-start fs-5">Aung Kyaw Wai Htun</p>
+                    </div>
+                    <div class="d-flex">
+                        <h5 class="text-danger offset-xl-3 col-xl-3 offset-2 col-4 text-start"><i class="fas fa-birthday-cake"></i> Birthdate</h5>
+                        <p class="text-white offset-1 col-5 text-start fs-5">06-07-2002</p>
+                    </div>
+                    <div class="d-flex">
+                        <h5 class="text-danger offset-xl-3 col-xl-3 offset-2 col-4 text-start"><i class="fas fa-phone"></i> Phone</h5>
+                        <p class="text-white offset-1 col-5 text-start fs-5">09-000000000</p>
+                    </div>
+                    <div class="d-flex">
+                        <h5 class="text-danger offset-xl-3 col-xl-3 offset-2 col-4 text-start"><i class="fas fa-envelope"></i> Email</h5>
+                        <p class="text-white offset-1 col-5 text-start fs-5">akwhtun@gmial.com</p>
+                    </div>
+                    <div class="d-flex">
+                        <h5 class="text-danger offset-xl-3 col-xl-3 offset-2 col-4 text-start"><i class="fas fa-map-marker-alt"></i> Address</h5>
+                        <p class="text-white offset-1 col-5 text-start fs-5">Mandalay, Myingyan</p>
+                    </div>
+                    <div class="d-flex">
+                        <h5 class="text-danger offset-xl-3 col-xl-3 offset-2 col-4 text-start"><i class="fas fa-lightbulb"></i> Job Status</h5>
+                        <p class="text-white offset-1 col-5 text-start fs-5 special free"><span class="bg-danger py-1 px-3 rounded">Freelancer</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 mt-5 text-center">
+                <p class="fs-3 text-danger special">My Hobbies</p>
+                <div class="d-flex flex-wrap justify-content-center col-12">
+                    <div class="bg-dark mx-4 col-xl-3 col-lg-4 col-md-5 col-10 mt-3 rounded px-3 py-1  hobby shadow">
+                        <i class="fas fa-code text-danger fs-3 mt-2"></i>
+                        <p class="fs-4 text-white-50">Coding</p>
+                    </div>
+                    <div class="bg-dark mx-4 col-xl-3 col-lg-4 col-md-5 col-10 mt-3 rounded px-3 py-1  hobby shadow">
+                        <i class="fas fa-gamepad text-danger fs-3 mt-2"></i>
+                        <p class="fs-4 text-white-50">Game</p>
+                    </div>
+                    <div class="bg-dark mx-4 col-xl-3 col-lg-4 col-md-5 col-10 mt-3 rounded px-3 py-1  hobby shadow">
+                        <i class="fas fa-music text-danger fs-3 mt-2"></i>
+                        <p class="fs-4 text-white-50">Music</p>
+                    </div>
+                    <div class="bg-dark mx-4 col-xl-3 col-lg-4 col-md-5 col-10 mt-3 rounded px-3 py-1  hobby shadow">
+                        <i class="fas fa-tv text-danger fs-3 mt-2"></i>
+                        <p class="fs-4 text-white-50">Movie</p>
+                    </div>
+                    <div class="bg-dark mx-4 col-xl-3 col-lg-4 col-md-5 col-10 mt-3 rounded px-3 py-1  hobby shadow">
+                        <i class="fas fa-book text-danger fs-3 mt-2"></i>
+                        <p class="fs-4 text-white-50">Reading</p>
+                    </div>
+                    <div class="bg-dark mx-4 col-xl-3 col-lg-4 col-md-5 col-10 mt-3 rounded px-3 py-1  hobby shadow">
+                        <i class="fas fa-coffee text-danger fs-3 mt-2"></i>
+                        <p class="fs-4 text-white-50">Coffee</p>
                     </div>
                 </div>
                 </div>
-            </div>
-        </section>
-        <!------home section end------->
+        </div>
+        </div>
+    </div>
+    <!-- about section end -->
 
-        <!-- about section start -->
-        <div class="about py-4 bg-black" id="about">
-            <div class="container-lg">
-            <div class="text-center">
-                <p class="mb-1 text-white">Discover</p>
-                <h3 class="text-danger">About Me</h3>
+    <!-- skills section start -->
+    <div class="py-4 min-vh-100 normal skillCircle" id="skill">
+        <div class="container-lg py-5">
+            <div class="text-center pb-2">
+                <h3 class="text-danger special">My Skills</h3>
             </div>
-            <div class="row align-items-center" style="min-height:82vh;">
-                <div class="col-md-6 text-center">
-                    <img src="./images/img2.jpg" style="width:380px;height:450px;">
+            <div class="d-flex flex-wrap gap-5 justify-content-center my-5">
+            <div class="circular mx-5 html">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        95
+                    </div>
+                    <div class="lang">
+                        HTML
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-4 d-flex flex-column justify-content-around">
-                        <div class="intro text-muted">
-                            <h3>Hello,</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laborum eos, cupiditate magnam voluptatem aspernatur qui incidunt ullam id minus minima, consectetur cum impedit numquam sit tenetur, deserunt velit eum.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, exercitationem, cupiditate consectetur quisquam provident ad sunt eligendi fugit iste esse error impedit aliquam ducimus ullam perferendis deserunt quasi similique ipsum.
-                        </p>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <h5 class="text-danger"><i class="fas fa-user-alt"></i> Name</h5>
-                                <p class="text-white">Aung Kyaw Wai Htun</p>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="text-danger"><i class="fas fa-phone-alt"></i> Phone</h5>
-                                <p class="text-white">09881971360</p>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="text-danger"><i class="fas fa-envelope"></i> Email</h5>
-                                <p class="text-white">akwhtun@gmail.com</p>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="text-danger"><i class="fas fa-map-marked-alt"></i> Address</h5>
-                                <p class="text-white">Mandalay,Myingyan</p>
-                            </div>
-                            <div class="col-xl-8 col-lg-9 d-flex align-items-center justify-content-between" style="height:70px;">
-                                <a href="#" class="btn btn-dark text-danger text-decoration-none" ><i class="fas fa-download"></i> Download CV</a>
-                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-facebook"></i></a>
-                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="fs-2 text-decoration-none text-dark"><i class="fab fa-viber"></i></a>
-                            </div>
-                        </div>
+            </div>
+            <div class="circular mx-5 css">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        85
+                    </div>
+                    <div class="lang">
+                        CSS
+                    </div>
+                </div>
+            </div>
+            <div class="circular mx-5 bootstrap">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        90
+                    </div>
+                    <div class="lang">
+                        Bootstrap
+                    </div>
+                </div>
+            </div>
+            <div class="circular mx-5 js">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        80
+                    </div>
+                    <div class="lang">
+                        JavaScript
+                    </div>
+                </div>
+            </div>
+            <div class="circular mx-5 jquery">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        80
+                    </div>
+                    <div class="lang">
+                        jQuery
+                    </div>
+                </div>
+            </div>
+            <div class="circular mx-5 react">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        60
+                    </div>
+                    <div class="lang">
+                        React
+                    </div>
+                </div>
+            </div>
+            <div class="circular mx-5 php">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        80
+                    </div>
+                    <div class="lang">
+                        PHP
+                    </div>
+                </div>
+            </div>
+            <div class="circular mx-5 laravel">
+                <div class="inner"></div>
+                <div class="range">
+                    <div class="value">
+                        85
+                    </div>
+                    <div class="lang">
+                        Laravel
                     </div>
                 </div>
             </div>
             </div>
         </div>
-        <!-- about section end -->
+    </div>
+    <!-- skills section end -->  
 
-        <!-- Services section start -->
-        <div class="services py-4" id="services">
-            <div class="container-lg">
-                <div class="text-center my-3">
-                <p class="mb-1 text-white">What I Do?</p>
-                <h3 class="text-danger">My Services</h3>
-                </div>
-            <div class="row g-3 justify-content-center">
-                <div class="col-md-4 col-sm-6">
-                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
-                    <i class="fas fa-laptop-code fs-2 text-danger"></i>
-                    <p class="fs-4 my-3">Web Developement</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
-                    <i class="fas fa-laptop fs-2 text-danger"></i>
-                    <p class="fs-4 my-3">Web Design</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
-                    <i class="fas fa-desktop fs-2 text-danger"></i>
-                    <p class="fs-4 my-3">Fully Responsive</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
-                    <i class="far fa-lightbulb fs-2 text-danger"></i>
-                    <p class="fs-4 my-3">Creative Idea</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="shadow bg-dark text-muted p-4 text-center" style="height:260px;">
-                    <i class="far fa-images fs-2 text-danger"></i>
-                    <p class="fs-4 my-3">Photoshop</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora minima repellendus dolore soluta rem animi,</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5">
-                <div class="col-md-4"style="height:150px;">
-                    <div class=" h-100 shadow-sm d-flex flex-column justify-content-center align-items-center mx-1">
-                    <h1 class="text-danger mb-1 fs-1 fw-bold">3</h1>
-                    <span class="text-white">Year Experience</span>
-                    </div>
-                </div>
-                <div class="col-md-8 px-5">
-                    <div class="row g-2">
-                        <div class="col-md-6 col-sm-6" style="height:68px;">
-                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
-                            <h3 class="mb-0 text-danger">10+</h3>
-                            <p>Clients</p>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6" style="height:68px;">
-                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
-                            <h3 class="mb-0 text-danger">20+</h3>
-                            <p>Completed Projects</p>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6" style="height:68px;">
-                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
-                            <h3 class="mb-0 text-danger">10+</h3>
-                            <p>Positive Review</p>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6" style="height:68px;">
-                        <div class="bg-dark shadow-sm text-muted h-100 text-center pt-1">
-                            <h3 class="mb-0 text-danger">2</h3>
-                            <p>Achievements</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- Services section end -->
-
-        <!-- skills section start -->
-        <div class="skill py-4 bg-black" id="skill">
-            <div class="container-lg">
-                <div class="text-center mt-2">
-                <p class="mb-1 text-white">What My Design Skills Included? </p>
-                <h3 class="text-danger">My Skills</h3>
-                </div>
-                <div class="row my-4 px-5">
-                    <div class="col-sm-6 mb-4">
-                    <h4 class="text-danger">HTML & CSS</h4>
-                    <div class="progress" style="height:8px;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:90%;"></div>
-                    </div>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                    <h4 class="text-danger">JavaScript</h4>
-                    <div class="progress" style="height:8px;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:85%;"></div>
-                    </div>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <h4 class="text-danger">BootStrap</h4>
-                        <div class="progress" style="height:8px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:70%;"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                    <h4 class="text-danger">PhotoShop</h4>
-                    <div class="progress" style="height:8px;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:50%;"></div>
-                    </div>
-                    </div>      
-                </div>
-            </div>
-        </div>
-        <!-- skills section end -->  
-      
-        <!-- projects section start -->
-        <div class="projects py-4" id="projects">
-            <div class="container-lg">
-            <div class="text-center">
-                <p class="mb-1 text-white">Introduce My Projects</p>
-                <h3 class="text-danger">My Projects</h3>
-            </div>
+    <!-- freelancer section start -->
+    <div class="bg-black py-4" id="freelancer">
+        <div class="container-lg px-4 py-5">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="pj mb-4 text-center">
-                    <div class="img" style="height:260px;">
-                    <img  class="img-thumbnail w-100 h-100" src="./images/p1.jpg" alt="project1">
-                    </div>
-                    <h3 class="fs-5 mb-2 mt-2 text-white-50">Movie Design</h3>
-                    <a href="#"class="btn btn-dark text-danger">Live Demo</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                <div class="pj mb-4 text-center">
-                    <div class="img" style="height:260px;">
-                    <img  class="img-thumbnail w-100 h-100" src="./images/p2.jpg" alt="project2">
-                    </div>
-                    <h3 class="fs-5 mb-2 mt-2 text-white-50">Admin Dashboard</h3>
-                    <a href="#"class="btn btn-dark text-danger">Live Demo</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                <div class="pj mb-4 text-center">
-                    <div class="img" style="height:260px;">
-                    <img  class="img-thumbnail w-100 h-100" src="./images/p3.jpg" alt="project3">
-                    </div>
-                    <h3 class="fs-5 mb-2 mt-2 text-white-50">Music Website</h3>
-                    <a href="#"class="btn btn-dark text-danger">Live Demo</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                <div class="pj mb-4 text-center">
-                    <div class="img" style="height:260px;">
-                    <img  class="img-thumbnail w-100 h-100" src="./images/p4.jpg" alt="project4">
-                    </div>
-                    <h3 class="fs-5 mb-2 mt-2 text-white-50">Ecommerce</h3>
-                    <a href="#"class="btn btn-dark text-danger">Live Demo</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                <div class="pj mb-4 text-center">
-                    <div class="img" style="height:260px;">
-                    <img  class="img-thumbnail w-100 h-100" src="./images/p5.jpg" alt="project5">
-                    </div>
-                    <h3 class="fs-5 mb-2 mt-2 text-white-50">Landing Page</h3>
-                    <a href="#"class="btn btn-dark text-danger">Live Demo</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6"> 
-                <div class="pj mb-4 text-center">
-                    <div class="img" style="height:260px;">
-                    <img  class="img-thumbnail w-100 h-100" src="./images/p6.jpg" alt="project6">
-                    </div>
-                    <h3 class="fs-5 mb-2 mt-2 text-white-50">Online Book</h3>
-                    <a href="#"class="btn btn-dark text-danger">Live Demo</a>
-                    </div>
-                </div>
+            <div class="col-lg-8 text-danger text-center mx-auto">
+                <p class="fs-5 text-muted">Need Creative Developer for your Project?</p>
+                <h2 class="fs-1 mb-4 special">I can Help You!</h2>
+                <a href="#contact" class="con-btn">Contact Me</a>
             </div>
             </div>
         </div>
-        <!-- projects section end -->
+    </div>
+    <!-- freelancer section end -->
 
-        <!-- freelancer section start -->
-        <div class="freelancer bg-black py-4" id="freelancer">
-            <div class="container-lg  p-4">
-                <div class="row">
-                <div class="col-lg-8 text-danger text-center mx-auto">
-                    <p class="fs-5">Need Creative Developer for your Project?</p>
-                    <h2 class="fs-1 mb-4">I can Help You!</h2>
-                    <a href="#" class="btn btn-outline-danger text-danger shadow text-white-50">Contact Me</a>
-                </div>
-                </div>
+    <!-- projects section start -->
+    <div class="py-4 normal" id="project">
+        <div class="container-lg py-5">
+            <div class="text-center pb-3">
+                <h3 class="text-white">Here is My Some <span class="text-danger special">Projects</span></h3>
             </div>
-        </div>
-        <!-- freelancer section end -->
-
-        <!-- cotact section start  -->
-        <div class="contact py-4" id="contact">
-            <div class="container-lg">
-            <div class="text-center">
-                <h3 class="text-danger">Contact Me</h3>
-            </div>
-            <div class="row g-3">
-                <div class="col-md-5 d-flex justify-content-center">
-                    <div class="py-3">
-                        <div class="ph d-flex  mt-1 mb-3">
-                        <div class="icon">
-                            <i class="fas fa-phone-alt fs-4 text-danger"></i>
+            <div class="row d-flex justify-content-center flex-wrap gap-3 my-5">
+                <div class="col-md-5 col-sm-8 col-11 bg-black pj shadow-sm rounded">
+                    <div class="pj mb-4 text-center p-3">
+                        <div class="my-3">
+                        <img src="./images/html.png" alt="html">
+                        <img src="./images/css.png" alt="css">
+                        <img src="./images/js.png" alt="js">
                         </div>
-                        <div class="ms-3">
-                            <h5 class="mb-1 text-white-50">Phone</h5>
-                            <p class="text-muted">09881971360</p>
-                        </div>
-                        </div>
-                        <div class="ph d-flex  mt-1 mb-3">
-                        <div class="icon">
-                            <i class="fas fa-envelope fs-4 text-danger"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="mb-1 text-white-50">Email</h5>
-                            <p class="text-muted">akwhtun@gmail.com</p>
-                        </div>
-                        </div>
-                        <div class="ph d-flex  mt-1 mb-3">
-                        <div class="icon">
-                            <i class="fas fa-map-marked-alt fs-4 text-danger"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="mb-1 text-white-50">Address</h5>
-                            <p class="text-muted">Mandalay, Myingyan</p>
-                        </div>
-                        </div>
+                        <h3 class="fs-5 mb-2 mt-2 text-white-50">Clock Animation</h3>
+                        <p class="text-muted">A Clock with Animation by pure HTML, CSS & JavaScript.</p>
+                        <a href="https://github.com/akwhtun/Clock-Animation" target="_blank" class="btn btn-dark text-white btn-red-text"><i class="fab fa-github fs-5 mx-2"> </i> <span>View SourceCode </span></a>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <form class="px-1">
-                        <div class="row py-3 px-4">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control border-0 text-danger bg-dark shadow" placeholder="Your Name">
-                            </div>
-                            <div class="col-md-6 mb-3">
-                            <input type="email" class="form-control border-0 text-danger bg-dark shadow" placeholder="Your Email">
-                            </div>
-                            <div class="col-12 mb-3">
-                            <input type="text" class="form-control border-0 text-danger bg-dark shadow" placeholder="Subject">
-                            </div>
-                            <div class="col-12 mb-3">
-                            <textarea class="form-control border-0 text-danger bg-dark shadow" cols="30" rows="10" placeholder="Your Message"></textarea>
-                            </div>
-                            <div>
-                            <a href="#" class="btn btn-dark text-white-50"><i class="fas fa-paper-plane"></i> Send Message</a>
-                            </div>
+                <div class="col-md-5 col-sm-8 col-11 bg-black pj shadow-sm rounded">
+                    <div class="pj mb-4 text-center p-3">
+                        <div class="my-3">
+                            <img src="./images/html.png" alt="html">
+                            <img src="./images/css.png" alt="css">
+                            <img src="./images/js.png" alt="js">
                         </div>
-                    </form>
+                        <h3 class="fs-5 mb-2 mt-2 text-white-50">Ecommerce Web Design</h3>
+                        <p class="text-muted">Responsive Ecommerce Web Design with  pure HTML, CSS & JavaScript.</p>
+                        <a href="https://github.com/akwhtun/Ecommerce-website" target="_blank" class="btn btn-dark text-white btn-red-text"><i class="fab fa-github fs-5 mx-2"> </i> <span>View SourceCode </span></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-8 col-11 bg-black pj shadow-sm rounded">
+                    <div class="pj mb-4 text-center p-3">
+                        <div class="my-3">
+                            <img src="./images/html.png" alt="html">
+                            <img src="./images/css.png" alt="css">
+                            <img src="./images/jquery.png" alt="jquery">
+                            <img src="./images/php.png" alt="php">
+                            <img src="./images/mysql.png" alt="mysql">
+                        </div>
+                        <h3 class="fs-5 mb-2 mt-2 text-white-50">Order List Note</h3>
+                        <p class="text-muted">An Order List Note App with  HTML, CSS, jQuery, PHP & MySQL.</p>
+                        <a href="https://github.com/akwhtun/Order-List-Note" target="_blank" class="btn btn-dark text-white btn-red-text"><i class="fab fa-github fs-5 mx-2"> </i> <span>View SourceCode </span></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-8 col-11 bg-black pj shadow-sm rounded">
+                    <div class="pj mb-4 text-center p-3">
+                        <div class="my-3">
+                            <img src="./images/html.png" alt="html">
+                            <img src="./images/css.png" alt="css">
+                            <img src="./images/js.png" alt="js">
+                        </div>
+                        <h3 class="fs-5 mb-2 mt-2 text-white-50">A Simple Game </h3>
+                        <p class="text-muted">A Simple with HTML, CSS & JavaScript.</p>
+                        <a href="https://github.com/akwhtun/A-Simple-Game" class="btn btn-dark text-white btn-red-text"><i class="fab fa-github fs-5"> </i> <span>View SourceCode </span></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-8 col-11 bg-black pj shadow-sm rounded">
+                    <div class="pj mb-4 text-center p-3">
+                    <div class="my-3">
+                        <img src="./images/bootstrap.png" alt="bootstrap">
+                        <img src="./images/php.png" alt="php">
+                        <img src="./images/mysql.png" alt="mysql">
+                    </div>
+                        <h3 class="fs-5 mb-2 mt-2 text-white-50">User Authentication & User Authorization</h3>
+                        <p class="text-muted">Demonstrating User Authentication & User Authorization with Bootstrap, PHP & MySQL.</p>
+                        <a href="https://github.com/akwhtun/My-PHP-Test" target="_blank" class="btn btn-dark text-white btn-red-text"><i class="fab fa-github fs-5 mx-2"> </i> <span>View SourceCode </span></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-8 col-11 bg-black pj shadow-sm rounded">
+                    <div class="pj mb-4 text-center p-3">
+                    <div class="my-3">
+                        <img src="./images/bootstrap.png" alt="bootstrap">
+                        <img src="./images/jquery.png" alt="jQuery">
+                        <img src="./images/laravel.png" alt="laravel">
+                        <img src="./images/mysql.png" alt="mysql">
+                    </div>
+                        <h3 class="fs-5 mb-2 mt-2 text-white-50">POS Website</h3>
+                        <p class="text-muted">POS Online Website with Bootstrap, JQuery, Laravel & MySQL.</p>
+                        <a href="https://github.com/akwhtun/POS-Online-Website" target="_blank" class="btn btn-dark text-white btn-red-text"><i class="fab fa-github fs-5 mx-2"> </i> <span>View SourceCode </span></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-8 col-11 bg-black pj shadow-sm rounded">
+                    <div class="pj mb-4 text-center p-3">
+                    <div class="my-3">
+                        <img src="./images/bootstrap.png" alt="bootstrap">
+                        <img src="./images/jquery.png" alt="jQuery">
+                        <img src="./images/laravel.png" alt="laravel">
+                        <img src="./images/mysql.png" alt="mysql">
+                    </div>
+                        <h3 class="fs-5 mb-2 mt-2 text-white-50">Ebook</h3>
+                        <p class="text-muted">Ebook Web Application with Bootstrap, JQuery, Laravel & MySQL.</p>
+                        <a href="https://github.com/akwhtun/Ebook" target="_blank" class="btn btn-dark text-white btn-red-text"><i class="fab fa-github fs-5 mx-2"> </i> <span>View SourceCode </span></a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- projects section end -->
+
+    <!-- cotact section start  -->
+    <div class="py-4 bg-black min-vh-100" id="contact">
+        <div class="container-lg pt-5">
+        <div class="text-center pb-2">
+            <h3 class="text-danger special">Let's Collaborate</h3>
+        </div>
+        <div class="row g-3 my-5 d-flex flex-column align-items-center">
+            <div class="col-10 d-flex justify-content-center flex-md-row flex-column">
+                <div class="text-white-50 py-4 px-5 col-md-4 col-12 text-center address">
+                    <i class="fas fa-phone-alt fs-5 text-danger"></i>
+                    <p class="text-danger fs-4 m-0 p-0 text-uppercase car-text">Phone</p>
+                    <p>09-000000000 <br> 09-000000000</p>
+                </div>
+                <div class="text-white-50 py-4 px-5 col-md-4 col-12 text-center address">
+                    <i class="fas fa-map-marked-alt fs-5 text-danger"></i>
+                    <p class="text-danger fs-4 m-0 p-0 text-uppercase car-text">Address</p>
+                    <p>Myanmar, Mandalay,<br> Myingyan, KyawwZi</p>
+                </div>
+                <div class="text-white-50 py-4 px-5 col-md-4 col-12 text-center address">
+                    <i class="fas fa-envelope fs-5 text-danger"></i>
+                    <p class="text-danger fs-4 m-0 p-0 text-uppercase car-text">Email</p>
+                    <p>akwhtun@gamil.com<br> aungkyawwaihtun@gamil.com</p>
+                </div>
+            </div>
+            <div class="col-md-9 col-12 mt-3">
+                <form class="px-1">
+                    <div class="row py-3 px-4">
+                        <div class="col-md-6 col-12 mb-3">
+                            <input type="text" class="form-control border-0 text-danger bg-dark shadow" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                        <input type="email" class="form-control border-0 text-danger bg-dark shadow" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-12 mb-3">
+                        <input type="text" class="form-control border-0 text-danger bg-dark shadow" placeholder="Subject" required>
+                        </div>
+                        <div class="col-12 mb-3">
+                        <textarea class="form-control border-0 text-danger bg-dark shadow" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="#" class="btn btn-dark text-danger btn-red-text text-uppercase">Send Message</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 col-8 mt-5">
+                <div class="text-center py-2">
+                    <p class="text-danger fs-4 car-text">Connect with me!</p>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <a href="https://facebook.com/aungkyaw.waihtun" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/akwhtun" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-github"></i></a>
+                    <a href="#" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="fs-2 text-decoration-none text-white-50 social shadow-sm m-1 py-2 px-3 rounded"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-         <!-- cotact section end -->
+        </div>
+    </div>
+    <!-- cotact section end -->
 
     <!-- footer start  -->
-    <div class="footer py-3 bg-black">
+    <div class="py-3 normal" id="footer">
         <div class="container-lg mx-auto">
             <div class="text-center">
-                <small class="fs-5 text-white-50 m-0 p-0">&copy; 2022. All right reserved.</small>
+                <p class="text-white-50 m-0 p-0">&copy; 2022. All right reserved.</p>
             </div>
         </div>
     </div>
     <!-- footer end  -->
 
-        
-
     <!-- JS Link -->
-    <script src="./npm/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+
 </body>
 </html>
